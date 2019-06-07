@@ -40,3 +40,63 @@ const skip = (str) => {
 
     return result;
 }
+
+
+
+const reverse = (srt) => {
+    let i = srt.length - 1;
+    let result = '';
+  
+    while (i >= 0) {
+      result = result + srt[i];
+      i = i - 1;
+  
+    }
+  
+    return result;
+  }
+
+
+
+  let answer;
+
+  if (n === 1) {
+      answer = "One";
+  } else if (n === 2) {
+      answer = "Two";
+  } else {
+      answer = "Nothing";
+  }
+
+
+  switch(n) {
+      case 1:  //if (n === 1)
+        answer = "One";
+        break;
+
+      case 2:  //if (n === 2)
+        answer = "Two";
+        break;
+
+      default:
+          answer = "Nothing";
+          break;
+  }
+
+
+
+  switch(n) {
+    case 1:  //if (n === 1)
+      answer = "One";
+      break;
+
+    case 2:
+    case 3:
+    case 4:
+        answer = "Two to four";
+        break;
+
+    default:
+        answer =  "Nothing";
+        break;
+  }
